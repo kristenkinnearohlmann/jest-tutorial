@@ -1,3 +1,9 @@
+function filterByTerm(inputArr, searchTerm) {
+    return inputArr.filter(arrayElement => {
+        return arrayElement.url.match(searchTerm)
+    })
+}
+
 describe("Filter function", () => {
     test("it should filter by a search term (link)", () => {
         const input = [
