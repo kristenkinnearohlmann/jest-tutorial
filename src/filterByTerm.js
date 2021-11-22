@@ -1,4 +1,4 @@
-export function filterByTerm(inputArr, searchTerm) {
+function filterByTerm(inputArr, searchTerm) {
     // return inputArr.filter(arrayElement => {
     //     return arrayElement.url.match(searchTerm)
     // })

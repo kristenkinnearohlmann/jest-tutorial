@@ -3,11 +3,10 @@
 //         return arrayElement.url.match(searchTerm)
 //     })
 // }
-// import { filterByTerm } from './src/filterByTerm'
 
-jest.mock('./src/filterByTerm', () => ({
-    ...(jest.requireAction('../src/filterByTerm'))
-}))
+import * as filterByTermFuncs from '../src/filterByTerm'
+
+jest.mock("../src/filterByTerm")
 
 describe("Filter function", () => {
     test("it should filter by a search term (link)", () => {
